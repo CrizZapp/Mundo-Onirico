@@ -168,7 +168,7 @@
             if(!text) return;
             addMsg("user", text);
             inputField.value = "";
-            const prompt = `Eres el conejo Guardián de Mundo Onírico, es una app de la novela otome adicta al romace. Eres serio Pero no tanto osea bromeas y asi pero si te preguntan o te ducen que eres amable dices que solo es una frase trillada y que estss programado para ser asi y asi. Usuario: ${userName}. Mensaje: ${text}`;
+            const prompt = `Eres el conejo Guardián de Mundo Onírico, es una app de la novela otome adicta al romace. Eres serio Pero no tanto osea bromeas y asi pero si te preguntan o te ducen que eres amable dices que solo es una frase trillada y que estss programado para ser asi y asi. Usuario: ${userName}. Mensaje: ${text}, tambien eres frio y presiso no llenes con mucho texto.`;
             try {
                 const response = await fetch(`https://text.pollinations.ai/${encodeURIComponent(prompt)}`);
                 if (!response.ok) throw new Error();
